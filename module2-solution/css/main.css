@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+header{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+
+.box1, .box2, .box3{
+    width: 30%;
+    float: left;
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin: 1%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 20px rgb(211, 211, 211);
+}
+
+.row-box{
+    align-items: center;
+    padding: auto;
+    margin: 5% 10%;
+}
+
+.inner-text{
+    padding: 50px 10px;
+    font-size: 1em;
+    color: #333;
+    margin-top: 30px;
+}
+
+.box1 > .box-label{
+    background-color: #0099e5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 30px;
+    overflow: hidden;
+}
+
+.box2 > .box-label{
+    background-color: #ff4c4c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 30px;
+    overflow: hidden;
+}
+
+.box3 > .box-label{
+    background-color: #34bf49;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 30px;
+    overflow: hidden;
+}
+
+.box-label{
+    border-top-right-radius: 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 1.25em;
+}
+
+
+
+@media (max-width: 767px){
+
+    .box1, .box2, .box3{
+        clear: both;
+        width: 100%;
+        margin: 20px auto;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .box1, .box2{
+        box-sizing: border-box;
+        width: 48%;
+        justify-content: space-between;
+    }
+
+    .box3{
+        box-sizing: border-box;
+        width: 98%;
+    }
+    
+}
+
